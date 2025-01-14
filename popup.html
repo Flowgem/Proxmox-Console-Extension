@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 320px;
+      padding: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 8px;
+    }
+    
+    .checkmark {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #4CAF50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .checkmark::after {
+      content: '';
+      width: 12px;
+      height: 20px;
+      border: solid white;
+      border-width: 0 4px 4px 0;
+      transform: rotate(45deg);
+      margin-bottom: 5px;
+    }
+    
+    .text {
+      font-size: 20px;
+      color: #333;
+      font-weight: bold;
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="checkmark"></div>
+    <div class="text">Proxmox Console Extension is active!</div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html> 

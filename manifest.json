@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Proxmox Console Extension",
+  "version": "1.0",
+  "description": "Helpt bij het plakken van klembordinhoud in Proxmox console-sessies",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "1024": "images/console extension logo.png"
+    }
+  },
+  "icons": {
+    "1024": "images/console extension logo.png"
+  },
+  "commands": {
+    "paste-clipboard": {
+      "suggested_key": {
+        "default": "Ctrl+M",
+        "windows": "Ctrl+M",
+        "linux": "Ctrl+M",
+        "chromeos": "Ctrl+M",
+        "mac": "Command+M"
+      },
+      "description": "Plak klembordinhoud als toetsaanslagen"
+    }
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_start",
+    "all_frames": true,
+    "match_about_blank": true
+  }],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+} 
