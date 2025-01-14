@@ -18,13 +18,18 @@ Managing virtual machines in Proxmox can be frustrating when you can’t copy an
 1. Clone or download the repository:  
    ```bash
    git clone https://github.com/Flowgem/proxmox-console-extension.git
-## 🚀 Installation  
-1. Open your browser and navigate to the **Extensions** page:  
+2. Open your browser and navigate to the **Extensions** page:  
    - **Chrome:** `chrome://extensions`  
    - **Edge:** `edge://extensions`  
-2. Enable **Developer Mode** (usually a toggle in the top right).  
-3. Click **Load Unpacked** and select the folder where you cloned this repository.  
-4. The extension is now installed and ready to use! 🎉  
+3. Enable **Developer Mode** (usually a toggle in the top right).  
+4. Click **Load Unpacked** and select the folder where you cloned this repository.  
+5. The extension is now installed and ready to use! 🎉  
+6. **Set up a Shortcut:**  
+   - Go to the **Extensions** page.  
+   - Click on the **Keyboard Shortcuts** option (usually at the bottom of the page).  
+   - Assign a custom shortcut to activate the Proxmox Console Extension.  
+   - Now you can quickly trigger the extension with your chosen key combination! ⌨️  
+  
 
 ---
 
