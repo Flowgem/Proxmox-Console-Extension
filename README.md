@@ -15,6 +15,15 @@ Managing virtual machines in Proxmox can be frustrating when you can’t copy an
 ---
 
 ## 🚀 Installation  
+### Option 1: Download from Chrome Web Store  
+The easiest way to install the extension is via the Chrome Web Store:  
+
+[![Chrome Web Store](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Google_Chrome_Web_Store_logo.png/512px-Google_Chrome_Web_Store_logo.png)](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf?authuser=0&hl=nl&pli=1)  
+
+Click the logo above or use this link: [**Proxmox Console Extension** on Chrome Web Store](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf?authuser=0&hl=nl&pli=1)
+
+
+### Option 2: Manual Installation 
 1. Clone or download the repository:  
    ```bash
    git clone https://github.com/Flowgem/proxmox-console-extension.git
@@ -36,8 +45,14 @@ Managing virtual machines in Proxmox can be frustrating when you can’t copy an
 ## 🛠️ Usage  
 1. Open your Proxmox web interface and navigate to the console of a virtual machine.  
 2. Copy the desired text or command to your clipboard.  
-3. Click on the extension icon in your browser toolbar.  
+3. Use the keyboard shortcut:  
+   - **Chrome:** The default shortcut is `Ctrl + M` (Windows/Linux) or `Command + M` (Mac).  
+   - **Edge:** You must manually set a shortcut:  
+     - Go to the **Extensions** page (`edge://extensions`).  
+     - Click on **Keyboard Shortcuts** at the bottom of the page.  
+     - Assign a custom shortcut for the Proxmox Console Extension.  
 4. The clipboard content will be pasted into the active console session as keyboard input. 🚀  
+
 
 ---
 
