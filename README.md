@@ -75,3 +75,10 @@ Contributions are welcome! If you have ideas, bug fixes, or improvements, feel f
 
 ## 📧 Support  
 For issues or questions, feel free to create a [GitHub Issue](https://github.com/yourusername/proxmox-console-extension/issues) or reach out via email.  
+
+---
+## ☕ Support Me  
+If you find this extension helpful and want to support its development, you can buy me a coffee! Your support is greatly appreciated. 💖  
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-1.svg)](https://buymeacoffee.com/flowgem)  
+
