@@ -18,7 +18,7 @@ Managing virtual machines in Proxmox can be frustrating when you can’t copy an
 ### Option 1: Download from Chrome Web Store  
 The easiest way to install the extension is via the Chrome Web Store:  
 
-[![Chrome Web Store](https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png)](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf?authuser=0&hl=nl&pli=1)  
+[![Chrome Web Store](https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png)](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf)  
 
 Click the logo above or use this link: [**Proxmox Console Extension** on Chrome Web Store](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf)
 
