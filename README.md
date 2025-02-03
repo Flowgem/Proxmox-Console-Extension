@@ -20,7 +20,7 @@ The easiest way to install the extension is via the Chrome Web Store:
 
 [![Chrome Web Store](https://developer.chrome.com/static/docs/webstore/branding/image/YT2Grfi9vEBa2wAPzhWa.png)](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf?authuser=0&hl=nl&pli=1)  
 
-Click the logo above or use this link: [**Proxmox Console Extension** on Chrome Web Store](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf?authuser=0&hl=nl&pli=1)
+Click the logo above or use this link: [**Proxmox Console Extension** on Chrome Web Store](https://chromewebstore.google.com/detail/proxmox-console-extension/mnkdipbaleabnmdhikbhnkennhldlmaf)
 
 
 ### Option 2: Manual Installation 
