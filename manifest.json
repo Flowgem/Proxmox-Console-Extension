@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Proxmox Console Extension",
-  "version": "1.0",
-  "description": "Helpt bij het plakken van klembordinhoud in Proxmox console-sessies",
+  "name": "VM Console Extension",
+  "version": "1.1",
+  "description": "Helpt bij het plakken van klembordinhoud in VM console-sessies",
   "permissions": [
     "activeTab",
     "storage",

@@ -4,12 +4,17 @@ if (typeof autoModeEnabled === 'undefined') {
 if (typeof lastFocusedElement === 'undefined') {
   var lastFocusedElement = null;
 }
+if (typeof typingSpeed === 'undefined') {
+  var typingSpeed = 75; // Standaard snelheid (ms tussen toetsaanslagen)
+}
 if (typeof messageHandler === 'undefined') {
   var messageHandler = (request, sender, sendResponse) => {
     if (request.action === 'paste') {
       handlePaste();
     } else if (request.action === 'setAutoMode') {
       autoModeEnabled = request.enabled;
+    } else if (request.action === 'setTypingSpeed') {
+      typingSpeed = request.speed;
     }
   };
 }
@@ -81,7 +86,7 @@ async function simulateKeystrokes(text) {
   for (const char of chars) {
     if (isVMConsole) {
       // Wacht kort voordat we beginnen met het volgende karakter
-      await new Promise(resolve => setTimeout(resolve, 10));
+      await new Promise(resolve => setTimeout(resolve, Math.max(5, typingSpeed * 0.1)));
       
       const charCode = char.charCodeAt(0);
       const keyInfo = getKeyInfo(char);
@@ -102,7 +107,7 @@ async function simulateKeystrokes(text) {
           shiftKey: true
         });
         canvas.dispatchEvent(shiftDownEvent);
-        await new Promise(resolve => setTimeout(resolve, 10));
+        await new Promise(resolve => setTimeout(resolve, Math.max(5, typingSpeed * 0.1)));
       }
       
       // Keydown event
@@ -146,13 +151,13 @@ async function simulateKeystrokes(text) {
       });
       
       canvas.dispatchEvent(downEvent);
-      await new Promise(resolve => setTimeout(resolve, 15));
+      await new Promise(resolve => setTimeout(resolve, Math.max(5, typingSpeed * 0.15)));
       canvas.dispatchEvent(pressEvent);
-      await new Promise(resolve => setTimeout(resolve, 15));
+      await new Promise(resolve => setTimeout(resolve, Math.max(5, typingSpeed * 0.15)));
       canvas.dispatchEvent(upEvent);
       
       if (keyInfo.shift) {
-        await new Promise(resolve => setTimeout(resolve, 10));
+        await new Promise(resolve => setTimeout(resolve, Math.max(5, typingSpeed * 0.1)));
         const shiftUpEvent = new KeyboardEvent('keyup', {
           key: 'Shift',
           code: 'ShiftLeft',
@@ -168,10 +173,10 @@ async function simulateKeystrokes(text) {
       }
       
       // Langere vertraging tussen karakters voor Edge
-      await new Promise(resolve => setTimeout(resolve, 75));
+      await new Promise(resolve => setTimeout(resolve, typingSpeed));
     } else {
       // Wacht kort voordat we beginnen met het volgende karakter
-      await new Promise(resolve => setTimeout(resolve, 10));
+      await new Promise(resolve => setTimeout(resolve, Math.max(5, typingSpeed * 0.1)));
       
       // Normale input velden
       if (!targetElement || !targetElement.isContentEditable && !['INPUT', 'TEXTAREA'].includes(targetElement.tagName)) {
