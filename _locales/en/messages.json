@@ -1,0 +1,90 @@
+{
+  "extDescription": {
+    "message": "Helps you paste clipboard content into VM console sessions",
+    "description": "Description of the extension"
+  },
+  "commandDescription": {
+    "message": "Paste clipboard content as keystrokes",
+    "description": "Description of the keyboard shortcut"
+  },
+  "status": {
+    "message": "Active and ready to use",
+    "description": "Subtitle in the popup"
+  },
+  "speedTitle": {
+    "message": "Adjust typing speed",
+    "description": "Heading for the typing speed slider"
+  },
+  "speedSlow": {
+    "message": "Slow",
+    "description": "Slider label"
+  },
+  "speedNormal": {
+    "message": "Normal",
+    "description": "Slider label"
+  },
+  "speedFast": {
+    "message": "Fast",
+    "description": "Slider label"
+  },
+  "layoutTitle": {
+    "message": "Keyboard layout in the VM",
+    "description": "Heading for the keyboard layout setting"
+  },
+  "layoutAuto": {
+    "message": "Automatic ($NAME$)",
+    "description": "Automatic choice, with the detected layout name",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Norwegian"
+      }
+    }
+  },
+  "layoutAutoUnknown": {
+    "message": "Automatic",
+    "description": "Automatic choice when no layout could be detected"
+  },
+  "deadKeysLabel": {
+    "message": "The VM uses dead keys",
+    "description": "Checkbox: the VM has dead keys (^ ~ ` that wait for the next key)"
+  },
+  "layoutHint": {
+    "message": "Choose the layout the VM uses. Automatic uses the layout of this computer.",
+    "description": "Help text under the keyboard layout setting"
+  },
+  "shortcutLabel": {
+    "message": "Shortcut:",
+    "description": "Label before the keyboard shortcut"
+  },
+  "updateTitle": {
+    "message": "Updated to version $VERSION$!",
+    "description": "Update notice heading, with the version number",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.2"
+      }
+    }
+  },
+  "updateIntro": {
+    "message": "What's new:",
+    "description": "Update notice intro"
+  },
+  "updateItemLayouts": {
+    "message": "Keyboard layouts: characters now come out right in VMs that use another layout than English (US)",
+    "description": "Update notice item"
+  },
+  "updateItemLines": {
+    "message": "Line breaks are sent as Enter and tabs as Tab",
+    "description": "Update notice item"
+  },
+  "updateItemLanguages": {
+    "message": "Available in English, Dutch and Norwegian",
+    "description": "Update notice item"
+  },
+  "close": {
+    "message": "Close",
+    "description": "Close button"
+  }
+}

@@ -12,10 +12,28 @@ Managing virtual machines in VM environments can be frustrating when you can't c
 - **Time-Saving Tool:** Reduce repetitive typing and avoid errors with simple pasting.  
 - **Easy to Use:** Intuitive interface with quick activation from your browser toolbar.  
 - **Adjustable Speed:** Control the typing speed to match your VM console's responsiveness.
+- **Keyboard Layouts:** Works with VMs that use other keyboard layouts than English (US), such as German, French, Czech or Norwegian.
+
+---
+
+## ⌨️ Keyboard Layouts
+VM consoles like noVNC send the *physical key* to the VM, and the VM's own keyboard layout decides which character it becomes. That's why the extension needs to know which layout the VM uses: on a German VM, the key that types `y` on a US keyboard types `z`.
+
+- **Automatic** (default) uses the layout of the computer you're on. This works when the VM uses the same layout as your computer.
+- If the VM uses a different layout, pick it in the extension's popup.
+- **The VM uses dead keys:** many layouts type `^ ~ \`` with dead keys (they wait for the next key). Turn this off if the VM uses a "no dead keys" variant.
+
+The layouts come from [xkeyboard-config](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config), the layout database used by Linux. `layout-data.js` is generated with `tools/generate-layouts.mjs`; see the top of that file for how to run it or add a layout.
 
 ---
 
 ## 📋 Changelog
+
+### Version 1.2
+- **Keyboard Layouts:** 34 keyboard layouts, detected automatically from your computer. Characters like `y z / _ - @ ~` now come out right in VMs that don't use English (US)
+- **Accented Characters:** Characters like `é ü ñ` are typed with dead keys on layouts that have them
+- **Line Breaks:** New lines are sent as Enter and tabs as Tab
+- **Languages:** The extension is available in English, Dutch and Norwegian
 
 ### Version 1.1
 - **Name Change:** Renamed from "Proxmox Console Extension" to "VM Console Extension" for broader applicability

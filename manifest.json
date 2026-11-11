@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
   "name": "VM Console Extension",
-  "version": "1.1",
-  "description": "Helpt bij het plakken van klembordinhoud in VM console-sessies",
+  "version": "1.2",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
   "permissions": [
     "activeTab",
     "storage",
@@ -31,7 +32,7 @@
         "chromeos": "Ctrl+M",
         "mac": "Command+M"
       },
-      "description": "Plak klembordinhoud als toetsaanslagen"
+      "description": "__MSG_commandDescription__"
     }
   },
   "content_scripts": [{

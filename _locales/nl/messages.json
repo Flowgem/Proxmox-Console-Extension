@@ -1,0 +1,90 @@
+{
+  "extDescription": {
+    "message": "Helpt bij het plakken van klembordinhoud in VM console-sessies",
+    "description": "Description of the extension"
+  },
+  "commandDescription": {
+    "message": "Plak klembordinhoud als toetsaanslagen",
+    "description": "Description of the keyboard shortcut"
+  },
+  "status": {
+    "message": "Actief en klaar voor gebruik",
+    "description": "Subtitle in the popup"
+  },
+  "speedTitle": {
+    "message": "Invoersnelheid aanpassen",
+    "description": "Heading for the typing speed slider"
+  },
+  "speedSlow": {
+    "message": "Langzaam",
+    "description": "Slider label"
+  },
+  "speedNormal": {
+    "message": "Normaal",
+    "description": "Slider label"
+  },
+  "speedFast": {
+    "message": "Snel",
+    "description": "Slider label"
+  },
+  "layoutTitle": {
+    "message": "Toetsenbordindeling in de VM",
+    "description": "Heading for the keyboard layout setting"
+  },
+  "layoutAuto": {
+    "message": "Automatisch ($NAME$)",
+    "description": "Automatic choice, with the detected layout name",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Norwegian"
+      }
+    }
+  },
+  "layoutAutoUnknown": {
+    "message": "Automatisch",
+    "description": "Automatic choice when no layout could be detected"
+  },
+  "deadKeysLabel": {
+    "message": "De VM gebruikt dode toetsen",
+    "description": "Checkbox: the VM has dead keys (^ ~ ` that wait for the next key)"
+  },
+  "layoutHint": {
+    "message": "Kies de indeling die de VM gebruikt. Automatisch gebruikt de indeling van deze computer.",
+    "description": "Help text under the keyboard layout setting"
+  },
+  "shortcutLabel": {
+    "message": "Sneltoets:",
+    "description": "Label before the keyboard shortcut"
+  },
+  "updateTitle": {
+    "message": "Bijgewerkt naar versie $VERSION$!",
+    "description": "Update notice heading, with the version number",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.2"
+      }
+    }
+  },
+  "updateIntro": {
+    "message": "Wat is er nieuw:",
+    "description": "Update notice intro"
+  },
+  "updateItemLayouts": {
+    "message": "Toetsenbordindelingen: tekens komen nu goed door in VM's met een andere indeling dan Engels (VS)",
+    "description": "Update notice item"
+  },
+  "updateItemLines": {
+    "message": "Regeleinden worden als Enter verstuurd en tabs als Tab",
+    "description": "Update notice item"
+  },
+  "updateItemLanguages": {
+    "message": "Beschikbaar in het Engels, Nederlands en Noors",
+    "description": "Update notice item"
+  },
+  "close": {
+    "message": "Sluiten",
+    "description": "Close button"
+  }
+}
