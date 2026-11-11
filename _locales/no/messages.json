@@ -1,0 +1,90 @@
+{
+  "extDescription": {
+    "message": "Limer inn innholdet fra utklippstavlen som tastetrykk i VM-konsoller",
+    "description": "Description of the extension"
+  },
+  "commandDescription": {
+    "message": "Lim inn utklippstavlen som tastetrykk",
+    "description": "Description of the keyboard shortcut"
+  },
+  "status": {
+    "message": "Aktiv og klar til bruk",
+    "description": "Subtitle in the popup"
+  },
+  "speedTitle": {
+    "message": "Juster skrivehastighet",
+    "description": "Heading for the typing speed slider"
+  },
+  "speedSlow": {
+    "message": "Sakte",
+    "description": "Slider label"
+  },
+  "speedNormal": {
+    "message": "Normal",
+    "description": "Slider label"
+  },
+  "speedFast": {
+    "message": "Rask",
+    "description": "Slider label"
+  },
+  "layoutTitle": {
+    "message": "Tastaturoppsett i VM-en",
+    "description": "Heading for the keyboard layout setting"
+  },
+  "layoutAuto": {
+    "message": "Automatisk ($NAME$)",
+    "description": "Automatic choice, with the detected layout name",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Norwegian"
+      }
+    }
+  },
+  "layoutAutoUnknown": {
+    "message": "Automatisk",
+    "description": "Automatic choice when no layout could be detected"
+  },
+  "deadKeysLabel": {
+    "message": "VM-en bruker døde taster",
+    "description": "Checkbox: the VM has dead keys (^ ~ ` that wait for the next key)"
+  },
+  "layoutHint": {
+    "message": "Velg oppsettet VM-en bruker. Automatisk bruker oppsettet på denne datamaskinen.",
+    "description": "Help text under the keyboard layout setting"
+  },
+  "shortcutLabel": {
+    "message": "Hurtigtast:",
+    "description": "Label before the keyboard shortcut"
+  },
+  "updateTitle": {
+    "message": "Oppdatert til versjon $VERSION$!",
+    "description": "Update notice heading, with the version number",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.2"
+      }
+    }
+  },
+  "updateIntro": {
+    "message": "Dette er nytt:",
+    "description": "Update notice intro"
+  },
+  "updateItemLayouts": {
+    "message": "Tastaturoppsett: tegnene blir nå riktige i VM-er som bruker et annet oppsett enn engelsk (US)",
+    "description": "Update notice item"
+  },
+  "updateItemLines": {
+    "message": "Linjeskift sendes som Enter og tabulator som Tab",
+    "description": "Update notice item"
+  },
+  "updateItemLanguages": {
+    "message": "Tilgjengelig på engelsk, nederlandsk og norsk",
+    "description": "Update notice item"
+  },
+  "close": {
+    "message": "Lukk",
+    "description": "Close button"
+  }
+}

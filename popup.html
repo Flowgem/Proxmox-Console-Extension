@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <style>
@@ -116,6 +116,42 @@
       color: #666;
     }
     
+    .layout-container {
+      margin-top: 15px;
+    }
+
+    .layout-select {
+      width: 100%;
+      padding: 6px 8px;
+      font-family: inherit;
+      font-size: 14px;
+      border: 1px solid #c5e1a5;
+      border-radius: 5px;
+      background-color: white;
+      color: #333;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .checkbox input {
+      accent-color: #4CAF50;
+      margin: 0;
+    }
+
+    .hint {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #666;
+      line-height: 1.4;
+    }
+
     .footer {
       text-align: center;
       padding: 10px;
@@ -145,6 +181,15 @@
       font-weight: bold;
       box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     }
+
+    .keyboard-shortcut .shortcut-label {
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      margin: 0 3px 0 0;
+      font-weight: normal;
+    }
   </style>
 </head>
 <body>
@@ -153,33 +198,44 @@
       <div class="logo"></div>
       <div>
         <div class="title">VM Console Extension</div>
-        <div class="subtitle">Actief en klaar voor gebruik</div>
+        <div class="subtitle" data-i18n="status">Active and ready to use</div>
       </div>
     </div>
   </div>
-  
+
   <div class="content">
-    <div class="section-title">Invoersnelheid aanpassen</div>
-    
+    <div class="section-title" data-i18n="speedTitle">Adjust typing speed</div>
+
     <div class="slider-container">
       <input type="range" min="10" max="200" value="75" class="slider" id="typingSpeed">
       <div class="speed-value" id="speedValue">75 ms</div>
       <div class="speed-labels">
-        <span>Langzaam</span>
-        <span>Normaal</span>
-        <span>Snel</span>
+        <span data-i18n="speedSlow">Slow</span>
+        <span data-i18n="speedNormal">Normal</span>
+        <span data-i18n="speedFast">Fast</span>
       </div>
     </div>
-    
+
+    <div class="section-title layout-container" data-i18n="layoutTitle">Keyboard layout in the VM</div>
+
+    <div class="slider-container">
+      <select class="layout-select" id="keyboardLayout"></select>
+      <label class="checkbox" id="deadKeysRow">
+        <input type="checkbox" id="deadKeys" checked>
+        <span data-i18n="deadKeysLabel">The VM uses dead keys</span>
+      </label>
+      <div class="hint" data-i18n="layoutHint">Choose the layout the VM uses.</div>
+    </div>
+
     <div class="keyboard-shortcut">
-      Sneltoets: <span>Ctrl</span>+<span>M</span>
+      <span class="shortcut-label" data-i18n="shortcutLabel">Shortcut:</span> <span>Ctrl</span>+<span>M</span>
     </div>
   </div>
-  
-  <div class="footer">
-    VM Console Extension v1.1
+
+  <div class="footer" id="footer">
+    VM Console Extension
   </div>
-  
-  <script src="popup.js"></script>
+
+  <script type="module" src="popup.js"></script>
 </body>
 </html> 
